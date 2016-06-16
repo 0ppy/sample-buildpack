@@ -23,8 +23,7 @@ install_xdebug() {
   BUILD_DIR=$0
   ln -s $BUILD_DIR/.heroku /app/.heroku
   export PATH=/app/.heroku/php/bin:$PATH
-  ./configure --enable-xdebug
-  make
+  phpize && ./configure --enable-phalcon && make && make install
   cd
   echo "important extension xdebug into php.ini"
   echo "extension=xdebug.so" >> /app/.heroku/php/etc/php/php.ini
