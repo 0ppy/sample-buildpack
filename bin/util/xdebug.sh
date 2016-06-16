@@ -20,7 +20,7 @@ install_xdebug() {
 # ./configure --enable-xdebug --with-php-config=$PHP_ROOT/bin/php-config
 # make
 # make install
-  BUILD_DIR=$1
+  BUILD_DIR=$0
   ln -s $BUILD_DIR/.heroku /app/.heroku
   export PATH=/app/.heroku/php/bin:$PATH
   ./configure --enable-xdebug
