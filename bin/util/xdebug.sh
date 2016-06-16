@@ -14,7 +14,7 @@ install_xdebug() {
     echo "[ERROR] Failed to find xdebug directory $xdebug_dir"
     exit
   fi
-  cd $xdebug_dir/build
+  cd $xdebug_dir/
 
 # /app/php/bin/phpize
 # ./configure --enable-xdebug --with-php-config=$PHP_ROOT/bin/php-config
