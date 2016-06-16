@@ -23,7 +23,6 @@ install_xdebug() {
   BUILD_DIR=$1
   ln -s $BUILD_DIR/.heroku /app/.heroku
   export PATH=/app/.heroku/php/bin:$PATH
-  cd xdebug
   ./configure --enable-xdebug
   make
   cd
