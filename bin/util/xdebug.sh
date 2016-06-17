@@ -34,5 +34,6 @@ install_xdebug() {
   echo "xdebug.remote_mode=req" >> /app/.heroku/php/etc/php/php.ini
   echo "xdebug.dump.GET = *" >> /app/.heroku/php/etc/php/php.ini
   echo "xdebug.dump.PUT = *" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_autostart= On" >> /app/.heroku/php/etc/php/php.ini
 
 }
