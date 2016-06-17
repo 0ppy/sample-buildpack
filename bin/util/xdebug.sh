@@ -29,4 +29,10 @@ install_xdebug() {
   echo "extension=xdebug.so" >> /app/.heroku/php/etc/php/php.ini
   echo "xdebug.remote_host=xdebug-buildpack.herokuapp.com" >> /app/.heroku/php/etc/php/php.ini
   echo "xdebug.remote_port=443" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_enable=on" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_handler=dbgp" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_mode=req" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.dump.GET = *" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.dump.PUT = *" >> /app/.heroku/php/etc/php/php.ini
+
 }
