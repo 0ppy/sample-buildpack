@@ -27,4 +27,6 @@ install_xdebug() {
   cd
   echo "important extension xdebug into php.ini"
   echo "extension=xdebug.so" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_host=xdebug-buildpack.herokuapp.com" >> /app/.heroku/php/etc/php/php.ini
+  echo "xdebug.remote_port=443" >> /app/.heroku/php/etc/php/php.ini
 }
